@@ -1,5 +1,4 @@
 <?php
-require 'conn.php';
 
 $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1 ;
 $postPorPagina = 5;
@@ -16,6 +15,3 @@ $totalArticulos = $totalArticulos->fetch()['total'];
 
 $totalPaginas = ceil($totalArticulos/$postPorPagina);
 
-if(file_exists('document.txt')){
-
-}
